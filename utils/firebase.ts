@@ -9,14 +9,13 @@ import { initializeApp } from 'firebase/app';
 
 // Initialize Firebase
 const firebaseConfig = {
-  apiKey: process.env.EXPO_PUBLIC_FIREBASE_API_KEY,
-  authDomain: process.env.EXPO_PUBLIC_FIREBASE_AUTH_DOMAIN,
-  databaseURL: process.env.EXPO_PUBLIC_FIREBASE_DATABASE_URL,
-  projectId: process.env.EXPO_PUBLIC_PROJECT_ID,
-  storageBucket: process.env.EXPO_PUBLIC_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: process.env.EXPO_PUBLIC_FIREBASE_MESSAGING_SENDER_ID,
-  appId: process.env.EXPO_PUBLIC_FIREBASE_APP_ID,
-  measurementId: process.env.EXPO_PUBLIC_FIREBASE_MEASUREMENT_ID,
+  apiKey: "AIzaSyDuoCZK9H9A5XAJJo_lBDLLFP5cKgM4RwU",
+  authDomain: "financeguru-4f50a.firebaseapp.com",
+  databaseURL: "https://financeguru-4f50a-default-rtdb.firebaseio.com",
+  projectId: "financeguru-4f50a",
+  storageBucket: "financeguru-4f50a.appspot.com",
+  messagingSenderId: "651381121933",
+  appId: "1:651381121933:web:a0a2bf3e79135bc1b113c4"
 };
 
 const firebase = initializeApp(firebaseConfig);

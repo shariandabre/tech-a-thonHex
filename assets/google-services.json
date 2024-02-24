@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "651381121933",
+    "firebase_url": "https://financeguru-4f50a-default-rtdb.firebaseio.com",
+    "project_id": "financeguru-4f50a",
+    "storage_bucket": "financeguru-4f50a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651381121933:android:2248cac35181b56cb113c4",
+        "android_client_info": {
+          "package_name": "com.moneysmart"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651381121933-eisa733m4gm9c51put29cguiig580pbd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX9_wAcmhkoYXOevGAxOM4aHYkHHJ-Ees"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651381121933-eisa733m4gm9c51put29cguiig580pbd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
