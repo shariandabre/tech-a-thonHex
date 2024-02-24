@@ -36,10 +36,8 @@ export default function Login() {
   }
 
   async function register() {
-    fetch('https://api.multiavatar.com/'
-+email+'.png?apikey=nW0AosGJbpZOaQ')
-  .then(res => res.text())
-  .then(svg => setDisplayimg(svg))
+    let x = Math.floor(Math.random() * (25-1+1)) + 1;
+  setDisplayimg(`https://xsgames.co/randomusers/assets/avatars/pixel/${x}.jpg`)
     const result = await signUp(email,pass);
     if (user&&user.uid) {
       
@@ -54,7 +52,7 @@ export default function Login() {
         otc:[],
         fx:[],
         indices:[],
-        badges:[],
+        badges:[{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"},{src:"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjloHklsBF8rK0LhRGS9_oRUnHDDMUFXQUEg&usqp=CAU"}],
         quiz:[],
         shop:[],
         displayimg:img
