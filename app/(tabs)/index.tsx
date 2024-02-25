@@ -17,7 +17,7 @@ export default function TabOneScreen() {
     { title: "Cypto", link: "/cypto" },
     { title: "Stocks", link: "/stocks" },
     { title: "Options", link: "/options" },
-    { title: "Indices", link: "/indeices" },
+    { title: "Indices", link: "/indices" },
     { title: "Forex", link: "/forex" },
   ];
 
@@ -42,7 +42,7 @@ export default function TabOneScreen() {
         setError(err);
         setIsLoading(false);
       });
-  }, [user]);
+  }, [user,data.balance]);
 
   async function fetchUsers() {
     try {

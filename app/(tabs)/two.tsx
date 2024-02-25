@@ -2,7 +2,7 @@ import { Image, Pressable, Text, View } from 'react-native';
 
 import Quiz from "../../components/mutualfunds/quiz"
 import FontAwesome from '@expo/vector-icons/FontAwesome';
-import { router, useLocalSearchParams } from 'expo-router';
+import { Navigator, router, useLocalSearchParams, useNavigation } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { useAuthentication } from '~/context/AuthContext';
 import getDoument from '~/utils/firestore/getData';
@@ -11,8 +11,13 @@ export default function TabTwoScreen() {
   const { user } = useAuthentication();
   const [data, setData] = useState(null);
   const [quizedata, setquizeData] = useState([{name:"loading",img:"loading"}]);
+  const Navigator = useNavigation()
   useEffect(() => {
+    const unsubscribe = Navigator.addListener('state', (state) => {
     fetchQuiz()
+  });
+
+  return unsubscribe;
   }, [user]);
 
   async function fetchQuiz() {

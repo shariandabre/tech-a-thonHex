@@ -46,7 +46,7 @@ export default function Login() {
         dispalyname:user.displayName,
         email:user.email,
         photourl:user.photoURL,
-        balance:0,
+        balance:1000,
         cypto:[],
         stocks:[],
         otc:[],

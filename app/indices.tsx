@@ -17,7 +17,7 @@ export default function Indices() {
         async function fetchIndicesData(){
             try {
                 setIsLoading(true); 
-                const response = await fetch(`https://api.polygon.io/v3/reference/tickers?market=indicesg&active=true&apiKey=278F7FbSJigIRs029vdlJOps_62S8S6Z`);
+                const response = await fetch(`https://api.polygon.io/v3/reference/tickers?market=indices&active=true&apiKey=278F7FbSJigIRs029vdlJOps_62S8S6Z`);
                 const parsedData = await response.json();
                 setIndicesdata(parsedData.results);
                 setIsLoading(false);
@@ -47,7 +47,7 @@ export default function Indices() {
                         </Pressable>
                 </View>
                 {Indicesdata.map((item: any, idx: any) => (
-                  <Pressable onPress={()=>{router.push({ pathname: '/modal', params:  {data:item.ticker,url:`https://api.polygon.io/v2/aggs/ticker/${item.ticker}/range/1/day/2024-02-22/2024-02-23?adjusted=true&sort=asc&limit=120&apiKey=278F7FbSJigIRs029vdlJOps_62S8S6Z`}  })}}  key={idx} className='h-24 
+                  <Pressable onPress={()=>{router.push({ pathname: '/modal', params:  {data:item.ticker,url:`https://api.polygon.io/v2/aggs/ticker/I:NDX/range/1/day/2023-03-07/2023-03-10?sort=asc&limit=120&apiKey=278F7FbSJigIRs029vdlJOps_62S8S6Z`}  })}}  key={idx} className='h-24 
                   p-4
                   w-[94%]
                   rounded-lg
